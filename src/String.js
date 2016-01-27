@@ -3,7 +3,7 @@
   var blankLeftRE = /^\s+/g;
   var blankRightRE = /\s+$/g;
 
-  nx.declare('nx.lang.String', {
+  var StringUtil = nx.declare('nx.lang.String', {
     statics: {
       trim: function (inString) {
         return String(inString)
@@ -30,5 +30,11 @@
       }
     }
   });
+
+
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = StringUtil;
+  }
+
 
 }(nx, nx.GLOBAL));
