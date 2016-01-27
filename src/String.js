@@ -2,7 +2,6 @@
 
   var blankLeftRE = /^\s+/g;
   var blankRightRE = /\s+$/g;
-  var location = global.location;
 
   nx.declare('nx.lang.String', {
     statics: {
@@ -23,6 +22,11 @@
       },
       capitalize: function (inString) {
         return inString.charAt(0).toUpperCase() + inString.slice(1);
+      },
+      repeat: function (inChar, inCount) {
+        var length = inCount + 1;
+        var tmp = new Array(length);
+        return tmp.join(inChar);
       }
     }
   });
