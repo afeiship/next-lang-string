@@ -5,7 +5,7 @@
     "afei"
   ],
   "description": "String helper based on next toolkit.",
-  "main": "dist/Ajax.js",
+  "main": "dist/String.js",
   "moduleType": [
     "node"
   ],
