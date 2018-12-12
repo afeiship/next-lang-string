@@ -1,68 +1,21 @@
-#next-lang-string
+# next-string-length
+> Get string length
 
-##description:
-+ String helper based on next toolkit.
+## resouces:
++ https://www.plus2net.com/javascript_tutorial/string-charcodeat.php
++ http://www.w3school.com.cn/jsref/jsref_charCodeAt.asp
++ https://github.com/simaQ/wx-f2/blob/master/src/index.js
 
-##usage:
-+ get string util:
-```javascript:
-  var StringUtil=nx.lang.String;
-```
-+ trim:
-```javascript:
-  var abc='   abc ';
-  console.log(
-    StringUtil.trim(abc)
-  );
-  //result:
-  //abc
-```
-+ camelCase:
-```javascript:
-  var str2='font-size';
-  console.log(
-    StringUtil.camelCase(abc)
-  );
-  //result:
-  //fontSize
-```
-+ hyphenate:
-```javascript:
-  var str3='fontWeight';
-  console.log(
-    StringUtil.hyphenate(abc)
-  );
-  //result:
-  //font-weight
-```
-+ capitalize:
-```javascript:
-  var str3='abc';
-  console.log(
-    StringUtil.capitalize(abc)
-  );
-  //result:
-  //Abc
+## install:
+```bash
+npm install -S afeiship/next-string-length --registry=https://registry.npm.taobao.org
 ```
 
-+ repeat:
-```javascript:
-  var str3='abc';
-  console.log(
-    StringUtil.repeat('a',3)
-  );
-  //result:
-  //aaa
+## usage:
+```js
+import 'next-string-length';
+
+nx.stringLength('a'); //1
+nx.stringLength('abc');//3
+nx.stringLength('阿飞');//4
 ```
-
-
-
-##test
-+ install mocha -g
-+ mocha
-
-
-
-
-
-
